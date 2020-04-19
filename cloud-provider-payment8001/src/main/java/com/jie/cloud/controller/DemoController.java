@@ -1,15 +1,18 @@
 package com.jie.cloud.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@Slf4j
 @RestController
 @RequestMapping("/demo")
 public class DemoController {
 
 	@GetMapping("/hello")
 	public String sayHello() {
-		return "Hello Cloud!";
+		log.info("1111");
+		return "Hello Cloud!!!aaabbb";
 	}
 }
